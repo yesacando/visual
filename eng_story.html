@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>typo essay</title>
+        <meta charset="utf-8" />
+        <style>
+            body{
+                margin: 0px;
+            }
+            .wrap{
+                min-width: 700px;
+                max-width: 1600px;
+                margin: 0px auto;
+            }
+            header{
+                background-color :black;
+                color:black;
+                font-size: 14px;
+            }
+            header h1{
+                margin: 10px 0px;
+            }
+            header h1 span{
+                color: #cfc91e;
+            }
+            header ul{
+                padding:0px;
+                margin:20px 0px;
+            }
+            header li{
+                float:left;
+                list-style: none;
+                padding: 0px 20px;
+                font-weight: bold;
+            }
+            .float_left{
+                float:left;
+            }
+            .float_right{
+                float:right;
+            }
+            .clearfix::after{ /*float left 이상증상 방지*/
+                content:""; /*특정 브라우저 이상증상 해결용*/
+                clear: both; /*float 제거: 양쪽 (둘다)*/
+                display: table; /*특정 브라우저 이상증상 해결용*/
+            }
+            img{
+                padding: 0px 0px 0px 20px;
+            }
+            a{
+                color:white;
+                text-decoration: none;
+            }
+            a:link{
+                color:white;
+            }
+            a:visited{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color:#FFF193;
+            }
+            a:active{
+                color:white;
+            }
+            a:focus{
+                color:#FFF193;
+            }
+            .none{
+                padding:0px;
+            }
+     
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="clearfix">
+                <!-- div, span 의미없이 공간분할 -->
+                <h1 class="float_left"><a href="./index.html"><img src="./garamond_title.png" width="170px"></a></h1>
+                <nav class="float_right">
+                    <ul class="clearfix">
+                        <li><a href="./eng_story.html">서체꼴 이야기</a></li>
+                        <li><a href="./eng_spacing.html">자간행간 사이사이</a></li>
+                        <li><a href="./eng_size.html">크기와 무게</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+        <img class="none" src="./story_eng.gif" width="1520px">
+        <img class="none" src="./story_eng1.jpg"width="1520px">
+
+        <a style="display:scroll;position:fixed;bottom:10px;right:10px;" 
+        href="#" title="맨위로"><img src="./top_eng.png" width="70px"></a>
+
+    </body>
+</html>
